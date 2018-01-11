@@ -18,7 +18,7 @@ export class AppComponent {
     this.clicks.push(this.clicks.length);
   }
 
-  getColor() {
-    return this.clicks.length >= 5? 'blue' : 'white';
+  getColor(click: number) {
+    return click >= 5? 'blue' : 'white';
   }
 }
