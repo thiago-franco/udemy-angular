@@ -11,14 +11,14 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'app';
   display = false;
-  clicks = 0;
+  clicks = [];
 
   onClick() {
     this.display ? this.display = false : this.display = true;
-    this.clicks++;
+    this.clicks.push(this.clicks.length);
   }
 
   getColor() {
-    return this.clicks >= 5? 'blue' : 'white';
+    return this.clicks.length >= 5? 'blue' : 'white';
   }
 }
