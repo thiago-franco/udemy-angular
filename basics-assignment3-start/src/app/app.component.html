@@ -1,0 +1,8 @@
+<div class="col-xs-12">
+  <br>
+  <button class="btn btn-primary" (click)='onClick()'>Display Details</button>
+  <div [ngStyle]="{backgroundColor: getColor()}">
+    <p *ngIf="display" [ngClass]="{whiteText: clicks>=5}">Detailed informationg goes here.</p>
+  </div>
+  <p>total clicks: {{ clicks }}</p>
+</div>
