@@ -5,7 +5,7 @@
     <p *ngIf="display">Detailed informationg goes here.</p>
   </div>
   <p>total clicks: {{ clicks.length }}</p>
-  <div *ngFor="let click of clicks" [ngClass]="{whiteText: click>=5}" [ngStyle]="{backgroundColor: getColor(click)}">
+  <div *ngFor="let click of clicks; let i = index" [ngClass]="{whiteText: i>=5}" [ngStyle]="{backgroundColor: getColor(i)}">
     {{ click }}
   </div>
 </div>
