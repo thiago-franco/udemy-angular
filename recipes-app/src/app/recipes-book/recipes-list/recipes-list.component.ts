@@ -8,6 +8,7 @@ import { Recipe } from '../recipe.model';
 })
 export class RecipesListComponent implements OnInit {
   recipes: Recipe[] = [
+    new Recipe('Chocolate Cake', 'A classic recipe', 'https://www.gimmesomeoven.com/wp-content/uploads/2011/03/flourless-chocolate-cake.jpg'),
     new Recipe('Chocolate Cake', 'A classic recipe', 'https://www.gimmesomeoven.com/wp-content/uploads/2011/03/flourless-chocolate-cake.jpg')
   ];
 
